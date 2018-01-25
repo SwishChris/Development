@@ -5,8 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SkillsUSA_Program"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="350" Width="525" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<Label Content="XML Sender" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,64,0,0" Width="234" Height="52" RenderTransformOrigin="0.5,0.5" FontFamily="Montserrat Semi Bold" FontSize="36">
+			<Label.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="-5.949"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Label.RenderTransform>
+		</Label>
+		<Button Content="Send" HorizontalAlignment="Left" Margin="357,180,0,0" VerticalAlignment="Top" Width="82" Height="24" Click="Button_Click" FontFamily="Montserrat"/>
+		<TextBox x:Name="txtbox" HorizontalAlignment="Left" Height="23" Margin="137,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="203" FontFamily="Montserrat" TextChanged="txtbox_TextChanged"/>
+		<Label Content="v1.0" HorizontalAlignment="Left" Margin="274,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="43" FontFamily="Montserrat Light">
+			<Label.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="-7.661"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Label.RenderTransform>
+		</Label>
+		<Label Content="By: Christian Patton" HorizontalAlignment="Left" Margin="116,104,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontFamily="Montserrat Light">
+			<Label.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="-6.846"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Label.RenderTransform>
+		</Label>
+		<Separator HorizontalAlignment="Left" Height="51" Margin="10,222,0,0" VerticalAlignment="Top" Width="497"/>
+		<TextBlock HorizontalAlignment="Left" Margin="10,260,0,0" TextWrapping="Wrap" Text="XML Sender is a program developed by Christian Patton for SkillsUSA. XML Sender allows you to create XML elements to a set XML File. An XML files are for storing and transporting data. For example, It can be used to set options for configuration files and the data gathered from them will set the configuration settings. XML is widely used in the business world of Computer Science for data." VerticalAlignment="Top" Height="80" Width="505" FontFamily="Montserrat Light"/>
+		<Button Content="X" HorizontalAlignment="Left" VerticalAlignment="Top" Width="21" Margin="488,10,0,0" Click="Button_Click_1" RenderTransformOrigin="0.868,0.26">
+			<Button.Background>
+				<ImageBrush ImageSource="exitbtn.png" Stretch="UniformToFill"/>
+			</Button.Background>
+		</Button>
+		<Button Content="Open" HorizontalAlignment="Left" Margin="46,180,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="Button_Click_2"/>
+
+	</Grid>
 </Window>
