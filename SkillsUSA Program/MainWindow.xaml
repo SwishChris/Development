@@ -20,8 +20,8 @@
 				</TransformGroup>
 			</Label.RenderTransform>
 		</Label>
-		<Button Content="Send" HorizontalAlignment="Left" Margin="357,180,0,0" VerticalAlignment="Top" Width="82" Height="24" Click="Button_Click" FontFamily="Montserrat"/>
-		<TextBox x:Name="txtbox" HorizontalAlignment="Left" Height="23" Margin="137,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="203" FontFamily="Montserrat" TextChanged="txtbox_TextChanged"/>
+		<Button Content="Send" HorizontalAlignment="Left" Margin="374,182,0,0" VerticalAlignment="Top" Width="82" Height="51" Click="Button_Click" FontFamily="Montserrat"/>
+		<TextBox x:Name="txtbox" HorizontalAlignment="Left" Height="23" Margin="157,182,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="203" FontFamily="Montserrat" TextChanged="txtbox_TextChanged"/>
 		<Label Content="v1.0" HorizontalAlignment="Left" Margin="274,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="43" FontFamily="Montserrat Light">
 			<Label.RenderTransform>
 				<TransformGroup>
@@ -49,7 +49,11 @@
 				<ImageBrush ImageSource="exitbtn.png" Stretch="UniformToFill"/>
 			</Button.Background>
 		</Button>
-		<Button Content="Open" HorizontalAlignment="Left" Margin="46,180,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="Button_Click_2"/>
-
+		<Button Content="Open" HorizontalAlignment="Left" Margin="63,182,0,0" VerticalAlignment="Top" Width="75" Height="51" Click="Button_Click_2"/>
+		<ComboBox HorizontalAlignment="Left" Margin="157,210,0,0" VerticalAlignment="Top" Width="203" RenderTransformOrigin="0.524,0.591">
+			<ComboBoxItem x:Name="Combo1" IsSelected="True">Name</ComboBoxItem>
+			<ComboBoxItem x:Name="Combo2">Email</ComboBoxItem>
+			<ComboBoxItem x:Name="Combo3">Phone</ComboBoxItem>
+		</ComboBox>
 	</Grid>
 </Window>

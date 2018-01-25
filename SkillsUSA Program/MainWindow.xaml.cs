@@ -27,6 +27,8 @@ namespace SkillsUSA_Program
         {
             InitializeComponent();
         }
+        int type = 0; /* Value for switch*/
+
         OpenFileDialog ofd = new OpenFileDialog();
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -35,9 +37,39 @@ namespace SkillsUSA_Program
             {
                 doc = XDocument.Load(streamReader);
             }
-            doc.Root.Add(
-                new XElement("Name", txtbox.Text));
-            doc.Save(@"C:\Desktop.xml");
+            switch (type) /* Changes between combobox based on user input */
+            {
+                case 1:
+                    string type1 = "Name";
+                    doc.Root.Add(
+                    new XElement(type1, txtbox.Text));
+                    doc.Save(@"C:\Desktop.xml");
+                    break;
+                case 2:
+                    string type2 = "Email";
+                    doc.Root.Add(
+                    new XElement(type2, txtbox.Text));
+                    doc.Save(@"C:\Desktop.xml");
+                    break;
+                default:
+                    string type3 = "Phone";
+                    doc.Root.Add(
+                    new XElement(type3, txtbox.Text));
+                    doc.Save(@"C:\Desktop.xml");
+                    break;
+            }
+            if (Combo1.IsSelected = true)
+            {
+                type = 1;
+            }
+            if (Combo2.IsSelected = true)
+            {
+                type = 2;
+            }
+            if (Combo3.IsSelected = true)
+            {
+                type = 3;
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -59,6 +91,11 @@ namespace SkillsUSA_Program
             ofd.ShowDialog();
 
             
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
